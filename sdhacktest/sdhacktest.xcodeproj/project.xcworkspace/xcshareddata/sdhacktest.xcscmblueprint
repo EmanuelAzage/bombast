@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03F0D35D75CD52B113D9F325428DEB986BABE2E8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03F0D35D75CD52B113D9F325428DEB986BABE2E8" : 9223372036854775807,
+    "BACFFE9F9B0D56399F821DF1A2204C2BABBAE798" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EFEC6FDD-D8B4-44EF-8587-DE7468305D31",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03F0D35D75CD52B113D9F325428DEB986BABE2E8" : "bombast\/",
+    "BACFFE9F9B0D56399F821DF1A2204C2BABBAE798" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "sdhacktest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "sdhacktest\/sdhacktest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/EmanuelAzage\/bombast.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03F0D35D75CD52B113D9F325428DEB986BABE2E8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/download.eclipse.org\/egit\/github\/updates\/",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BACFFE9F9B0D56399F821DF1A2204C2BABBAE798"
+    }
+  ]
+}

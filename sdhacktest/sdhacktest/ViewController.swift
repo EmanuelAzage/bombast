@@ -13,20 +13,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @IBOutlet weak var mapView: MKMapView!
     var locationManager : CLLocationManager = CLLocationManager()
-    
-    /*
-     
-     [self.locationManager requestWhenInUseAuthorization];
-     [self.locationManager setDesiredAccuracy: kCLLocationAccuracyHundredMeters];
-     [self.locationManager setDistanceFilter:1000.0f];
-     [self.locationManager startUpdatingLocation];
-     
-     self.locationManager.delegate = self;
-     
-     [self.mapView setDelegate:self];
-     [self.mapView setShowsUserLocation:YES];
-     
-     */
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +36,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     // CLLocation delegate method
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let newLocation : CLLocation = locations.last!
+        
+        //set the span size
+        mapView.setRegion(MKCoordinateRegionMake(newLocation.coordinate, MKCoordinateSpanMake(0.5, 0.5)), animated: true)
         
     }
 
