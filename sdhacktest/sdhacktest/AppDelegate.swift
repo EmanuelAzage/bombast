@@ -14,9 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        return AWSMobileClient.sharedInstance.didFinishLaunching(application: application, withOptions: launchOptions)
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return AWSMobileClient.sharedInstance.withApplication(application: application, withURL: url, withSourceApplication: sourceApplication, withAnnotation: annotation)
+    }
+    
+    func applicationDidBecomeActive(application: UIApplication) {
+        AWSMobileClient.sharedInstance.applicationDidBecomeActive(application: application)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
